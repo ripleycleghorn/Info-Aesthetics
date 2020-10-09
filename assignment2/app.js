@@ -18,6 +18,17 @@ const xAxisGroup = graph.append('g')
     .attr('transform', `translate(0, ${graphHeight})`);
 const yAxisGroup = graph.append('g');
 
+//add tooltip
+const tip = d3
+  .select("body")
+  .append("div")
+  .attr("class", "card")
+  .style("padding", "8px") // Add some padding so the tooltip content doesn't touch the border of the tooltip
+  .style("position", "absolute") // Absolutely position the tooltip to the body. Later we'll use transform to adjust the position of the tooltip
+  .style("left", 0)
+  .style("top", 0)
+  .style("visibility", "hidden");
+
 d3.json("data/lasthour.json").then(data => {
     
     const y = d3.scaleLinear()
@@ -32,13 +43,13 @@ d3.json("data/lasthour.json").then(data => {
    
     //join data to rect
     const rects = graph.selectAll('rect')
-    .data(data)
+        .data(data)
 
+    // console.log(rects);
 
     rects.attr('width', x.bandwidth)
         .attr('height', d => graphHeight - y(d.properties.mag))
-        .attr('fill', 'orange')
-        .attr('x', d => x(d.properties.title))
+        .attr('x', d => x(d.properties.place))
         .attr('y', d => y(d.properties.mag));
 
     //append the data selection to the DOM
@@ -46,10 +57,26 @@ d3.json("data/lasthour.json").then(data => {
         .append('rect')
             .attr('width', x.bandwidth)
             .attr('height', d => graphHeight - y(d.properties.mag))
-            .attr('fill', 'white')
+            .attr('fill', '#c5c5c5')
             .attr('stroke', 'black')
             .attr('x', d => x(d.properties.place))
             .attr('y', d => y(d.properties.mag));
+
+    graph.selectAll('rect')
+        .on("mouseover", (event, d) => {
+            let content = `<div class="name">${d.properties.place}</div>`;
+            content += `<div class="mag">${d.properties.mag}</div>`;
+            tip.html(content).style("visibility", "visible");
+            tip.style("transform", "translate(120px,20px)");
+            tip.style("padding", "5px");
+            tip.style("background", "#847577");
+            tip.style("color", "#fff");
+            handleMouseOver(event, d);
+        })
+        .on("mouseout", (event, d) => {
+            tip.style("visibility", "hidden");
+            handleMouseOut(event, d);
+        })
 
     //create and call the axes
     const xAxis = d3.axisBottom(x);
@@ -64,3 +91,17 @@ d3.json("data/lasthour.json").then(data => {
         .attr('text-anchor', 'end');
 
 })
+
+const handleMouseOver = (event, d) => {    
+    d3.select(event.currentTarget)
+        .transition()
+        .duration(300)
+        .attr("fill", "orange");
+};
+
+const handleMouseOut = (event, d) => {
+    d3.select(event.currentTarget)
+    .transition()
+    .duration(300)
+    .attr("fill", "#c5c5c5");
+};

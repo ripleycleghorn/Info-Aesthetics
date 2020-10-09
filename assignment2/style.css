@@ -1,0 +1,8 @@
+rect {
+    stroke-width: 3;
+}
+.title {
+    position: absolute;
+    top: 10;
+    right: 500;
+}

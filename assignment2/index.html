@@ -3,13 +3,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Piazzolla:wght@600&display=swap" rel="stylesheet">
     <title>Bar chart</title>
 </head>
 <body>
-    <div class = "title">Earthquake City</div>
-    <div class="canvas"></div>
-    <script src="https://d3js.org/d3.v6.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js" integrity="sha512-jaNmuLbHtQ1ND+i63wVvwBd9T2hB3gTnk3x0Pp5R+AJwDdyzMe3t0vQqwUSoI9a/Ol1nscGV/1et4zSwL0P3AA==" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <div class="container">
+        <div class="title">Earthquake City</div>
+        <div class="canvas"></div>
+        <div class="description">Earthquake City is an imaginary city where each building represents an earthquake that happened within the last hour. The height of each building equals the magnitude (how big) the earthquake is. The earthquakes go from left to right by time, where the earthquake on the right is the most recent earthquake. If you hover over a building, it tells you the location, magnitude, and coordinates of the earthquake.<br><br>Comprehension Questions:
+            <ul>
+                <li>Where is the location of the biggest earthquake?</li>
+                <li>How small is the smallest earthquake?</li>
+                <li>At what time was the most recent earthquake?</li>
+            </ul>
+        Try entering a pair of coordinates into Google Maps to see the exact location of the earthquake.
+        </div>
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js" integrity="sha512-jaNmuLbHtQ1ND+i63wVvwBd9T2hB3gTnk3x0Pp5R+AJwDdyzMe3t0vQqwUSoI9a/Ol1nscGV/1et4zSwL0P3AA==" crossorigin="anonymous"></script>
+        <script>src="dataclean.js"</script>
+        <script src="app.js"></script>
+    </div>
 </body>
 </html>

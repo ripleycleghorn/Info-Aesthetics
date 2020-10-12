@@ -1,8 +1,34 @@
+.container {
+    display: grid;
+    grid-template-areas: "canvas title"
+                         "canvas description ";
+    grid-template-rows: .5fr 1.5fr ;
+    grid-template-columns: 1fr 1fr;
+    background-color: #CDE0F7;
+ }
 rect {
     stroke-width: 3;
 }
 .title {
-    position: absolute;
+    /* position: absolute;
     top: 10;
-    right: 500;
+    right: 500; */
+    grid-area: title;
+    font-family: 'Piazzolla', serif;
+    font-size: 40;
+    text-align: left;
+    padding-top: 50;
+}
+.canvas {
+    grid-area: canvas;
+}
+.description {
+    grid-area: description;
+    font-family: 'Oswald', sans-serif;
+}
+.tick {
+    font-family: 'Piazzolla', serif;
+}
+.card {
+    font-family: 'Oswald', sans-serif;
 }

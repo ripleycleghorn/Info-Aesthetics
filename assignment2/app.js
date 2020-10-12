@@ -1,7 +1,7 @@
 const svg = d3.select('.canvas')
     .append('svg')
         .attr('width', 800)
-        .attr('height', 600);
+        .attr('height', 650);
 
 //create margins and dimensions
 const margin = {top: 20, bottom: 100, left: 100, right: 100}
@@ -36,7 +36,7 @@ d3.json("data/lasthour.json").then(data => {
       .range([graphHeight,0]);
 
     const x = d3.scaleBand()
-      .domain(data.map(item => item.properties.place))
+      .domain(data.map(item => item.properties.time))
       .range([0,600])
       .paddingInner(-0.1)
     //   .paddingOuter(0.2);
@@ -49,7 +49,7 @@ d3.json("data/lasthour.json").then(data => {
 
     rects.attr('width', x.bandwidth)
         .attr('height', d => graphHeight - y(d.properties.mag))
-        .attr('x', d => x(d.properties.place))
+        .attr('x', d => x(d.properties.time))
         .attr('y', d => y(d.properties.mag));
 
     //append the data selection to the DOM
@@ -57,19 +57,21 @@ d3.json("data/lasthour.json").then(data => {
         .append('rect')
             .attr('width', x.bandwidth)
             .attr('height', d => graphHeight - y(d.properties.mag))
-            .attr('fill', '#c5c5c5')
+            .attr('fill', '#8C8C8C')
             .attr('stroke', 'black')
-            .attr('x', d => x(d.properties.place))
+            .attr('x', d => x(d.properties.time))
             .attr('y', d => y(d.properties.mag));
 
     graph.selectAll('rect')
         .on("mouseover", (event, d) => {
-            let content = `<div class="name">${d.properties.place}</div>`;
-            content += `<div class="mag">${d.properties.mag}</div>`;
+            let content = `<div class="name">Location: ${d.properties.place}</div>`;
+            content += `<div class="mag">Magnitude: ${d.properties.mag}</div>`;
+            content += `<div class="coord">Longitude: ${d.geometry.coordinates[0]}</div>`;
+            content += `<div class="coord">Latitude: ${d.geometry.coordinates[1]}</div>`;
             tip.html(content).style("visibility", "visible");
-            tip.style("transform", "translate(120px,20px)");
+            tip.style("transform", "translate(480px,20px)");
             tip.style("padding", "5px");
-            tip.style("background", "#847577");
+            tip.style("background", "#5B7FAB");
             tip.style("color", "#fff");
             handleMouseOver(event, d);
         })
@@ -82,6 +84,9 @@ d3.json("data/lasthour.json").then(data => {
     const xAxis = d3.axisBottom(x);
     const yAxis = d3.axisLeft(y)
         .ticks(5)
+    
+    //for some reason removes both axes?
+    // xAxis.select(".domain").remove();
 
     xAxisGroup.call(xAxis);
     yAxisGroup.call(yAxis);
@@ -96,12 +101,12 @@ const handleMouseOver = (event, d) => {
     d3.select(event.currentTarget)
         .transition()
         .duration(300)
-        .attr("fill", "orange");
+        .attr("fill", "#D9D9D9");
 };
 
 const handleMouseOut = (event, d) => {
     d3.select(event.currentTarget)
     .transition()
     .duration(300)
-    .attr("fill", "#c5c5c5");
+    .attr("fill", "#8C8C8C");
 };

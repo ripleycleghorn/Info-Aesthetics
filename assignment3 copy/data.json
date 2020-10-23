@@ -1,0 +1,34 @@
+[
+    {
+        "reason": "I don't want to vote",
+        "value": 567
+    },
+    {
+        "reason": "It's not convenient",
+        "value": 119
+    },
+    {
+        "reason": "I don't know how to register",
+        "value": 72
+    },
+    {
+        "reason": "I don’t want to register for privacy or security reasons",
+        "value": 138
+    },
+    {
+        "reason": "I intend to register, but haven’t gotten around to it",
+        "value": 357
+    },
+    {
+        "reason": "Registration opportunities are not available in my preferred language or in a format that is accessible to me",
+        "value": 9
+    },
+    {
+        "reason": "I am not eligible due to a felony conviction",
+        "value": 70
+    },
+    {
+        "reason": "There has not been a candidate or issue that has inspired me to register",
+        "value": 326
+    }
+]

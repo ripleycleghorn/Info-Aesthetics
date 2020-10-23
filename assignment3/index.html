@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonvoters</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <main style="background-color: #F8F9FA;">
+        <div class="title">Why Do Nonvoters Not Vote?</div>
+        <div class="opening-text">
+            <div class="firstparagraph"><span class="subhead">H</span>ow many people consistitute nonvoters? (Note that here, nonvoters refer to people who are either not registered to vote, or who are registered but have not voted in any recent elections--2016 presidential and 2018 midterm election). According to research by Pew, “in the U.S., roughly six-in-ten adults are registered to vote.”</div>
+            <div class="graph1-2"><img src="graph1-2.png" alt=""></div>
+            <p>Among those who are registered, “four-in-ten Americans who were eligible to vote did not do so in 2016.” </p>
+            <div class="graph1-2"><img src="graph1-2.png" alt=""></div>
+            <p>So who, then, are nonvoters (demographically speaking)? Nonvoters are oftentimes claimed by the democratic party to be white and rich, i.e. privileged. Thus, the logic is often used: “those who choose not to vote won’t suffer the consequences of the election as much as marginalized people will.”</p>
+            <p>But according to Pew research published in 2018, those who don’t vote are not deemed privileged; they “were more likely to be younger, less educated, less affluent and nonwhite.” This is important because when democrats point fingers at nonvoters claiming that they are abusing their privilege, this is largely not the case. So the next question becomes: why don’t they vote? The visualizations below explore the answer to this question.</p>
+            <p>Among people who weren’t registered or whose address was out of date, here are the reasons cited</p>
+            <div class="canvas"></div>
+            <p>These results are noteworthy for another reason. Although voter suppression is a real threat, the responses do not point to it as the main culprit in this particular context (i.e. maybe it is a larger problem for those who show up to the polls and not those who do not register); ‘lack of convenience’ was only selected by 9% as a reason for not registering. On the contrary, a quarter of respondents cited ‘not being inspired by a candidate or issue’. The top reason, however, was not wanting to vote.</p>
+            <p>Let’s take a closer look at those who responded “I don’t want to vote, so I don’t need to register” and their reasons for not voting:</p>
+            <!-- <img src="graph4.png" alt=""> -->
+            <figure class="highcharts-figure">
+                <div id="container"></div>
+                <!-- <p class="highcharts-description">
+                    Chart showing stacked horizontal bars. This type of visualization is great for comparing data that accumulates up to a sum.
+                </p> -->
+            </figure>
+        </div>
+    </main>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="graph.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

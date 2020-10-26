@@ -1,3 +1,4 @@
+//stacked bar chart attempt
 // set the dimensions and margins of the graph
 var margin = {top: 10, right: 30, bottom: 20, left: 50},
     width = 460 - margin.left - margin.right,

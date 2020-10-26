@@ -20,14 +20,16 @@ p {
     margin: auto;
     hyphens: auto;
 }
-.subhead {
-    font-size: 35px;
-    /* line-height: 70px; */
-}
+
 /* .canvas {
     width: 50%;
     margin: 15 auto;
 } */
+.subhead {
+    font-size: 35px;
+    /* line-height: 70px; */
+}
+
 /* highcharts */
 /* .highcharts-figure, .highcharts-data-table table {
     min-width: 310px; 

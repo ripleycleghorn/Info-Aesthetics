@@ -1,45 +1,45 @@
-﻿group,response,count
-I’m not interested in what is happening in government. ,Refused,4
-I’m not interested in what is happening in government. ,Major Reason,104
-I’m not interested in what is happening in government. ,Minor Reason,161
-I’m not interested in what is happening in government. ,Not a Reason,298
-Voting has little to do with the way real decisions are made. ,Refused,5
-Voting has little to do with the way real decisions are made. ,Major Reason,201
-Voting has little to do with the way real decisions are made. ,Minor Reason,134
-Voting has little to do with the way real decisions are made. ,Not a Reason,227
-I just don’t think about doing it. ,Refused,4
-I just don’t think about doing it. ,Major Reason,97
-I just don’t think about doing it. ,Minor Reason,131
-I just don’t think about doing it. ,Not a Reason,335
-I don’t see a difference between the candidates or parties.,Refused,5
-I don’t see a difference between the candidates or parties.,Major Reason,137
-I don’t see a difference between the candidates or parties.,Minor Reason,130
-I don’t see a difference between the candidates or parties.,Not a Reason,294
-I don’t like any of the candidates on the ballot. ,Refused,5
-I don’t like any of the candidates on the ballot. ,Major Reason,177
-I don’t like any of the candidates on the ballot. ,Minor Reason,120
-I don’t like any of the candidates on the ballot. ,Not a Reason,265
-I’m not informed enough about the candidates or issues to make a good decision. ,Refused,5
-I’m not informed enough about the candidates or issues to make a good decision. ,Major Reason,94
-I’m not informed enough about the candidates or issues to make a good decision. ,Minor Reason,132
-I’m not informed enough about the candidates or issues to make a good decision. ,Not a Reason,337
-I dislike politics. ,Refused,4
-I dislike politics. ,Major Reason,227
-I dislike politics. ,Minor Reason,143
-I dislike politics. ,Not a Reason,193
-My one vote isn’t going to affect how things turn out. ,Refused,5
-My one vote isn’t going to affect how things turn out. ,Major Reason,167
-My one vote isn’t going to affect how things turn out. ,Minor Reason,149
-My one vote isn’t going to affect how things turn out. ,Not a Reason,246
-I have been unable to vote due to a disability or language barrier. ,Refused,7
-I have been unable to vote due to a disability or language barrier. ,Major Reason,19
-I have been unable to vote due to a disability or language barrier. ,Minor Reason,36
-I have been unable to vote due to a disability or language barrier. ,Not a Reason,505
-I am too busy to vote.,Refused,5
-I am too busy to vote.,Major Reason,33
-I am too busy to vote.,Minor Reason,95
-I am too busy to vote.,Not a Reason,434
-My religion discourages voting. ,Refused,5
-My religion discourages voting. ,Major Reason,78
-My religion discourages voting. ,Minor Reason,23
-My religion discourages voting. ,Not a Reason,461
+﻿category,group,response,count
+Disinterest/Dislike,I’m not interested in what is happening in government. ,Refused,4
+Disinterest/Dislike,I’m not interested in what is happening in government. ,Major Reason,104
+Disinterest/Dislike,I’m not interested in what is happening in government. ,Minor Reason,161
+Disinterest/Dislike,I’m not interested in what is happening in government. ,Not a Reason,298
+Outcome,Voting has little to do with the way real decisions are made. ,Refused,5
+Outcome,Voting has little to do with the way real decisions are made. ,Major Reason,201
+Outcome,Voting has little to do with the way real decisions are made. ,Minor Reason,134
+Outcome,Voting has little to do with the way real decisions are made. ,Not a Reason,227
+Disinterest/Dislike,I just don’t think about doing it. ,Refused,4
+Disinterest/Dislike,I just don’t think about doing it. ,Major Reason,97
+Disinterest/Dislike,I just don’t think about doing it. ,Minor Reason,131
+Disinterest/Dislike,I just don’t think about doing it. ,Not a Reason,335
+Outcome,I don’t see a difference between the candidates or parties.,Refused,5
+Outcome,I don’t see a difference between the candidates or parties.,Major Reason,137
+Outcome,I don’t see a difference between the candidates or parties.,Minor Reason,130
+Outcome,I don’t see a difference between the candidates or parties.,Not a Reason,294
+Disinterest/Dislike,I don’t like any of the candidates on the ballot. ,Refused,5
+Disinterest/Dislike,I don’t like any of the candidates on the ballot. ,Major Reason,177
+Disinterest/Dislike,I don’t like any of the candidates on the ballot. ,Minor Reason,120
+Disinterest/Dislike,I don’t like any of the candidates on the ballot. ,Not a Reason,265
+Other,I’m not informed enough about the candidates or issues to make a good decision. ,Refused,5
+Other,I’m not informed enough about the candidates or issues to make a good decision. ,Major Reason,94
+Other,I’m not informed enough about the candidates or issues to make a good decision. ,Minor Reason,132
+Other,I’m not informed enough about the candidates or issues to make a good decision. ,Not a Reason,337
+Disinterest/Dislike,I dislike politics. ,Refused,4
+Disinterest/Dislike,I dislike politics. ,Major Reason,227
+Disinterest/Dislike,I dislike politics. ,Minor Reason,143
+Disinterest/Dislike,I dislike politics. ,Not a Reason,193
+Outcome,My one vote isn’t going to affect how things turn out. ,Refused,5
+Outcome,My one vote isn’t going to affect how things turn out. ,Major Reason,167
+Outcome,My one vote isn’t going to affect how things turn out. ,Minor Reason,149
+Outcome,My one vote isn’t going to affect how things turn out. ,Not a Reason,246
+Unable,I have been unable to vote due to a disability or language barrier. ,Refused,7
+Unable,I have been unable to vote due to a disability or language barrier. ,Major Reason,19
+Unable,I have been unable to vote due to a disability or language barrier. ,Minor Reason,36
+Unable,I have been unable to vote due to a disability or language barrier. ,Not a Reason,505
+Unable,I am too busy to vote.,Refused,5
+Unable,I am too busy to vote.,Major Reason,33
+Unable,I am too busy to vote.,Minor Reason,95
+Unable,I am too busy to vote.,Not a Reason,434
+Other,My religion discourages voting. ,Refused,5
+Other,My religion discourages voting. ,Major Reason,78
+Other,My religion discourages voting. ,Minor Reason,23
+Other,My religion discourages voting. ,Not a Reason,461

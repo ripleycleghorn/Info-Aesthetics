@@ -68,7 +68,7 @@ d3.json("data.json").then(data => {
         .attr("y1", function(d) { return y(d.reason); })
         .attr("y2", function(d) { return y(d.reason); })
         .attr("stroke", "grey")
-        .attr("stroke-width", "2")
+        .attr("stroke-width", ".5")
 
     // Circles
     svg.selectAll("mycircle")

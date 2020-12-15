@@ -1,0 +1,48 @@
+{
+    "release": {
+        "id": "acs2018_5yr",
+        "name": "ACS 2018 5-year",
+        "years": "2014-2018"
+    },
+    "tables": {
+        "B28011": {
+            "columns": {
+                "B28011001": {
+                    "indent": 0,
+                    "name": "Total:"
+                },
+                "B28011002": {
+                    "indent": 1,
+                    "name": "With an Internet subscription"
+                },
+                "B28011003": {
+                    "indent": 2,
+                    "name": "Dial-up alone"
+                },
+                "B28011004": {
+                    "indent": 2,
+                    "name": "Broadband such as cable, fiber optic, or DSL"
+                },
+                "B28011005": {
+                    "indent": 2,
+                    "name": "Satellite Internet service"
+                },
+                "B28011006": {
+                    "indent": 2,
+                    "name": "Other service"
+                },
+                "B28011007": {
+                    "indent": 1,
+                    "name": "Internet access without a subscription"
+                },
+                "B28011008": {
+                    "indent": 1,
+                    "name": "No Internet access"
+                }
+            },
+            "denominator_column_id": "B28011001",
+            "title": "Internet Subscriptions in Household",
+            "universe": "Households"
+        }
+    }
+}

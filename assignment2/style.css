@@ -1,6 +1,7 @@
 .container {
     display: grid;
     width: calc(100% - 80px);
+    min-height: 0;
     /* height: 100vh; */
     grid-template-areas: "canvas title"
                          "canvas description ";

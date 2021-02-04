@@ -1,5 +1,6 @@
 .container {
     display: grid;
+    width: 100vw;
     grid-template-areas: "canvas title"
                          "canvas description ";
     grid-template-rows: .5fr 1.5fr ;
